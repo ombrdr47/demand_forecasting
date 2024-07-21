@@ -5,3 +5,4 @@ lightgbm~=3.3.2
 gunicorn==20.1.0
 Werkzeug==3.0.3
 numpy==1.19.0
+Cython==3.0.10
