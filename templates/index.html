@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Get Prediction</h1>
+    <form id="predictionForm" method="POST" action="/predict">
+        <!-- Input fields for all 23 features -->
+        <label for="base_price">Base Price:</label>
+        <input type="number" step="any" id="base_price" name="base_price" required><br><br>
+        <label for="total_price">Total Price:</label>
+        <input type="number" step="any" id="total_price" name="total_price" required><br><br>
+        <label for="diff">Diff:</label>
+        <input type="number" step="any" id="diff" name="diff" required><br><br>
+        <label for="relative_diff_base">Relative Diff Base:</label>
+        <input type="number" step="any" id="relative_diff_base" name="relative_diff_base" required><br><br>
+        <label for="relative_diff_total">Relative Diff Total:</label>
+        <input type="number" step="any" id="relative_diff_total" name="relative_diff_total" required><br><br>
+        <label for="is_featured_sku">Is Featured SKU:</label>
+        <input type="number" id="is_featured_sku" name="is_featured_sku" required><br><br>
+        <label for="is_display_sku">Is Display SKU:</label>
+        <input type="number" id="is_display_sku" name="is_display_sku" required><br><br>
+        <label for="store_encoded">Store Encoded:</label>
+        <input type="number" id="store_encoded" name="store_encoded" required><br><br>
+        <label for="sku_encoded">SKU Encoded:</label>
+        <input type="number" id="sku_encoded" name="sku_encoded" required><br><br>
+        <label for="store_id">Store ID:</label>
+        <input type="number" id="store_id" name="store_id" required><br><br>
+        <label for="sku_id">SKU ID:</label>
+        <input type="number" id="sku_id" name="sku_id" required><br><br>
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" required><br><br>
+        <label for="end_month">End Month:</label>
+        <input type="number" id="end_month" name="end_month" required><br><br>
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        <label for="weeknum">Week Number:</label>
+        <input type="number" id="weeknum" name="weeknum" required><br><br>
+        <label for="date">Date:</label>
+        <input type="number" id="date" name="date" required><br><br>
+        <label for="week_serial">Week Serial:</label>
+        <input type="number" step="any" id="week_serial" name="week_serial" required><br><br>
+        <label for="end_date">End Date:</label>
+        <input type="number" id="end_date" name="end_date" required><br><br>
+        <label for="weekday">Weekday:</label>
+        <input type="number" id="weekday" name="weekday" required><br><br>
+        <label for="end_weekday">End Weekday:</label>
+        <input type="number" id="end_weekday" name="end_weekday" required><br><br>
+        <label for="end_weeknum">End Week Number:</label>
+        <input type="number" id="end_weeknum" name="end_weeknum" required><br><br>
+        <label for="end_year">End Year:</label>
+        <input type="number" id="end_year" name="end_year" required><br><br>
+        <label for="end_week_serial">End Week Serial:</label>
+        <input type="number" step="any" id="end_week_serial" name="end_week_serial" required><br><br>
+        <button type="submit">Get Prediction</button>
+    </form>
+</body>
+</html>
